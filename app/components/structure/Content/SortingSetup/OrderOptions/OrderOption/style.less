@@ -1,0 +1,26 @@
+@import '../../../../../../static/mixins.less';
+
+input[type="radio"] {
+  width: 0;
+}
+
+input[type="radio"] + label {
+  text-transform:capitalize;
+}
+
+input[type="radio"]:checked + label {
+  color: @font-color-medium;
+}
+
+label {
+  background-color: @dark-background;
+  color: @font-color-general;
+  font-size: 23px;
+  font-weight: bold;
+  padding: 0 10px;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+
+

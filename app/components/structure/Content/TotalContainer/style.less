@@ -1,0 +1,22 @@
+@import '../../../../static/mixins.less';
+
+.TotalContainer {
+  height: 240px;
+  position: relative;
+  margin: 0 15px;
+
+  .total-data {
+    height: 200px;
+    width: 100%;
+    background-color: @total-data-background;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5), 0 8px 20px 0 rgba(0, 0, 0, 0.5);
+  }
+
+}

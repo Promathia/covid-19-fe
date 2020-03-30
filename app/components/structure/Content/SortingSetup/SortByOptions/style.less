@@ -1,0 +1,39 @@
+@import '../../../../../static/mixins.less';
+
+.SortByOptions {
+  width: fit-content;
+  margin-right: 35px;
+
+  .sort-by-control {
+    background-color: @dark-background;
+    color: @font-color-medium;
+    padding: 16px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 3px 10px 0 rgba(0, 0, 0, 0.5);
+
+    span {
+      text-transform:capitalize;
+    }
+
+  }
+
+  .sort-by-control:focus {
+    outline: 0;
+  }
+
+  .sort-by-content {
+    display: none;
+    position: absolute;
+    background-color: @dark-background;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 10px;
+    z-index: 1;
+  }
+
+}
