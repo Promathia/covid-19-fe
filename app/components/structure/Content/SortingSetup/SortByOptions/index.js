@@ -22,7 +22,7 @@ export function SortByOptions(props) {
     return (
         <div className="SortByOptions">
             <button className="sort-by-control" onClick={(() => showSortByOptions())}>
-                Sort By: <span>{props.sortBy}</span>
+                <span className="dark">Sort By: </span><span>{props.sortBy}</span>
             </button>
             <div className="sort-by-content">
                 {props.sortingOptions

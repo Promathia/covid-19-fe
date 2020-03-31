@@ -1,8 +1,8 @@
 export const initialState = {
     sortingOptions: [],
     orderingOptions: [],
-    sortBy: 'country',
-    order: 'ascending',
+    sortBy: 'confirmed',
+    order: 'descending',
     itemsOnPage: 10,
     page: 1
 };
